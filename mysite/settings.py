@@ -36,6 +36,10 @@ ALLOWED_HOSTS = env.list(
     "DJANGO_ALLOWED_HOSTS", default=["localhost", "127.0.0.1", "django"]
 )
 
+CSRF_TRUSTED_ORIGINS = env.list(
+    "CSRF_TRUSTED_ORIGINS", default=["http://localhost", "http://127.0.0.1", "http://django"]
+)
+
 # Application definition
 
 INSTALLED_APPS = [
